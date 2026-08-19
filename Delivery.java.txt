@@ -1,0 +1,41 @@
+Delivery.java
+package delivery;
+import restaurant.Restaurant;
+import restaurant.Order;
+public class Delivery {
+public static void main(String[] args) {
+System.out.println("====================================
+====");
+System.out.println(" RESTAURANT FOOD ORDER
+SYSTEM");
+System.out.println("====================================
+====");
+Restaurant restaurant = new Restaurant(
+101,
+"RKode Restaurant"
+,
+"Chennai"
+,
+"Pizza"
+, 250,
+"Burger"
+, 150,
+"Pasta"
+, 200
+);
+restaurant.displayRestaurantDetails();
+Order order = new Order(
+5001,
+"Arun"
+,
+"Pizza"
+,
+2,
+250
+);
+order.calculateOrderAmount();
+order.displayOrderDetails();
+System.out.println("\n==================================
+======");
+}
+}
